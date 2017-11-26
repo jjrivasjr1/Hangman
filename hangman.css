@@ -1,3 +1,10 @@
-body{
-	background-color: gray;
+.container{
+	width: 100%;
+	background-color: red;
+	text-align: center;
 }
+
+ h3 {
+	background-color: purple;
+}
+

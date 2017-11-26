@@ -10,8 +10,11 @@
 <body>
 
 
-    
-<h1>Press any key to get started!</h1>
+ <form>
+ 	<h1>Press button to get started!</h1>
+ 	<input type="button" value="START" onClick="start() "/>
+ </form>   
+
 <!-- Stack the columns on mobile by making one full-width and the other half-width -->
 <div class="container">
 	<div class="row">
@@ -22,32 +25,39 @@
 	<!-- Columns start at 50% wide on mobile and bump up to 33.3% wide on desktop -->
 	<div class="row">
 	  <div class="col-xs-6 col-md-4">
-	  <h3>wins</h3>
-	  <h3 id="win-counter">wins</h3>
+	  <h3 id="wins">wins
+	  <h4 id="win-counter">--</h4>
+	  </h3>
 	  </div>
 
 	  <div class="col-xs-6 col-md-4">
-	  <h3>Secret Word</h3>
-	  <h3 id="secret-word">secret word</h3>
+	  <h3 id=" ">Secret Word</h3>
+	  <h4 id="secret-word">------</h4>
 	  </div>
 
 	  <div class="col-xs-6 col-md-4">
-	  <h3>losses</h3>
-	  <h3 id="loss-counter">losses</h3>
+	  <h3 id=" ">losses</h3>
+	  <h4 id="loss-counter">--</h4>
 	  </div>
 	</div>
 
 	<!-- Columns are always 50% wide, on mobile and desktop -->
 	<div class="row">
 	  <div class="col-xs-6" >
-	  <h3 >Number of Guesses Remaining</h3>
-	  <h3 id="guesses-left">Number of Guesses Remaining</h3>
+	  <h3 id=" " >Number of Guesses Remaining</h3>
+	  <h4 id="guesses-left">--</h4>
 	  </div>
 
 	  <div class="col-xs-6">
 	  <h3 id="wrong-guesses">Letters Already Guessed</h3>
+	  <h4 id="guessed-letters"> -- </h4>
 	  </div>
 
+	</div>
+	<div class="row">
+		<div class="col-xs-12 col-md-8">
+			<h1 id ="warning"></h1>
+		</div>
 	</div>
 </div>
  
